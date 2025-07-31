@@ -1,0 +1,40 @@
+Problem Statement:
+You are given a collection of unstructured text documents (e.g., news articles, scientific papers abstracts, customer support tickets, product reviews). Your task is to build a system that can:
+1.    Extract specific entities or key information from these documents (e.g., names, dates, locations, key metrics, sentiment, core issues).
+2.    Generate concise summaries of the documents.
+3.    Conceptual Agentic Component: Design how an AI agent could use this extraction and summarization capability as a "tool" to answer complex questions or perform specific tasks by navigating multiple documents.
+
+Tasks:
+
+1.    Data Preparation & Exploration:
+		o Obtain a relevant dataset of unstructured text documents (e.g., use NLTK's reuters corpus, a small Kaggle text dataset, or publicly available news article archives).
+		o Perform basic text preprocessing (tokenization, lowercasing, stop word removal, etc.).
+		o Conduct some exploratory analysis of the text (e.g., word frequency, document length distribution).
+2.  Information Extraction & Summarization:
+		o Implement methods to extract specific entities or key information. This could involve:
+			§  Rule-based methods: Using regular expressions or pattern matching.
+			§  Traditional NLP: Using libraries like SpaCy or NLTK for Named Entity Recognition (NER) or Part-of-Speech (POS) tagging.
+			§  Optional (Advanced): If familiar, demonstrate using pre-trained language models (e.g., via Hugging Face Transformers) for zero-shot or few-shot extraction/summarization.
+		o Implement a text summarization technique (e.g., extractive summarization using TF-IDF, TextRank, or an abstractive summarization approach if using LLMs).
+		o Evaluate the quality of your extractions and summaries (qualitatively, or quantitatively if a suitable gold standard dataset is available).
+3.  Agentic System Concept:
+		o Describe a scenario where an AI agent (e.g., a "Research Agent," a "Customer Insight Agent") needs to answer user queries by processing multiple documents using your developed extraction and summarization tools.
+		o Outline the agent's architecture:
+		§  Agent's Goal: What specific, higher-level task is the agent trying to achieve?
+		§  Agent's Tools: How would it use your extraction and summarization functions?
+		§  Reasoning/Planning: How would the agent chain these tools together, make decisions, and handle user input or ambiguity? (e.g., flow diagram, pseudocode).
+		§  Memory (Optional): Would the agent need to store information across interactions?
+
+Deliverables:
+
+- Code Repository: (public github URL)
+		o  Well-documented Python code for data loading, preprocessing, information extraction, and summarization. 
+		o Preferably as a Jupyter notebook. Please take care of all requirements needed for the Notebook to run at my end.
+		o  A requirements.txt file.
+		o  A README.md with instructions to run the code, chosen dataset source, and a clear explanation of the agentic concept.
+		·         Brief Report (PDF, ~2 pages):
+		o  Overview of your approach to text processing, extraction, and summarization.
+		o  Discussion of results and any challenges faced.
+		o  Detailed explanation of your proposed agentic workflow, including the scenario, architecture, and how it leverages your core NLP components.
+
+ 
